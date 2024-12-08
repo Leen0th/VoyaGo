@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Styling for the header */
+header {
+    background-color: #ffffff; /* Replace with your background image */
+    position: relative;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center; /* Center the entire nav bar */
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between; /* Space out the items evenly */
+    width: 100%;
+    align-items: center;
+}
+
+/* Styling for left side navigation links */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left a {
+    color: #628ECB; /* لون النص */
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left a:hover {
+    color: #8AAEE0; /* لون النص عند التمرير */
+}
+
+.nav-left a i {
+    margin-right: 8px;
+}
+
+/* Center the logo in the header */
+.nav-center {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    height: 50px; /* Adjust the size as needed */
+}
+
+/* Align right side profile picture and name */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #B1C9EF; /* لون الحدود */
+    margin-right: 8px;
+}
+
+.nav-right span {
+    color: #628ECB; /* لون النص */
+    font-size: 14px;
+}
+
+.nav-right span:hover {
+    color: #8AAEE0; /* لون النص عند التمرير */
+}
+
+/*-----------------details----------------*/
+/* Importing fonts from Google Fonts */
+
+/* Styling for all the elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:white; /* لون الخلفية */
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cover-photo {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.cover-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.traveler-info {
+    position: relative;
+    top: -50px;
+    text-align: center;
+    font-size: 24px;
+    color: #395886; /* لون النص */
+    margin-top: 10px;
+}
+
+.travel-info {
+    color: #888; /* لون النص */
+    font-size: 16px;
+}
+
+.traveler-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    background-color: white;
+}
+
+.travel-info p {
+    color: #888; /* لون النص */
+    font-size: 16px;
+}
+
+.traveler-details {
+    margin-top: 10px;
+}
+
+.traveler-name {
+    margin: 0;
+    font-size: 24px;
+    color: #395886; /* لون النص */
+}
+
+.travel-info {
+    text-align: center;
+    font-size: 18px;
+    margin-top: -30px;
+}
+
+.like-btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.like-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.like-count {
+    font-size: 18px;
+    color: #395886; /* لون النص */
+}
+
+.place-frame {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border: 1px solid #B1C9EF; /* لون الحدود */
+    border-radius: 10px;
+    position: relative; /* Ensures that the like button is positioned relative to this container */
+}
+
+.place-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #395886; /* لون النص */
+}
+
+.place {
+    margin-bottom: 20px;
+}
+
+.place-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.place-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.place-photo {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.place-details {
+    max-width: 600px;
+}
+
+.place-name {
+    font-size: 20px;
+    margin: 0;
+    color: #395886; /* لون النص */
+}
+
+.location, .description {
+    margin-top: 10px;
+    color: #628ECB; /* لون النص */
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+.comments p {
+    margin: 5px 0;
+    color: #395886; /* لون النص */
+}
+
+.add-comment {
+    display: flex;
+    margin-top: 10px;
+}
+
+.add-comment input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #B1C9EF; /* لون الحدود */
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.add-comment button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #628ECB; /* لون الخلفية */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-comment button:hover {
+    background-color: #395886; /* لون الخلفية عند التمرير */
+}
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+.footer {
+    background-color: #8AAEE0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.brand-name{
+    text-align: left;
+}
+
+.footer-upper {
+    background-image: url('background-image.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+}
+
+.footer-upper-content {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-upper h2 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-apps {
+    padding-left: 500px;
+    flex: 1;
+    text-align: center;
+}
+
+.footer-apps p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.app-buttons img {
+    width: 120px;
+    margin: 5px;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+}
+
+/* Remove underline from icons and links */
+.flight-table td a {
+    text-decoration: none;
+}
+
+/* Optional hover effect for icons without underline */
+.flight-table td a:hover {
+    text-decoration: none; /* Ensures no underline appears on hover */
+    color: #8AAEE0; /* Color change on hover */
+}

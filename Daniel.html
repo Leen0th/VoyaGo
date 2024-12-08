@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Details</title>
+    <link rel="stylesheet" href="Details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <a href="Homepage.php"><i class="fas fa-sign-out-alt"></i> Log-Out</a>
+                <a href="UsersHomepage.php"><i class="fas fa-arrow-left"></i> Back to Homepage</a>
+            </div>
+            <!-- Center logo in header -->
+            <div class="nav-center">
+                <img src="pics/voyago.png" alt="Logo" class="logo"> 
+            </div>
+    
+            <div class="nav-right">
+                <img src="pics/profileUser.png" alt="John Doe Small Profile" class="small-profile">
+                <span> John D.</span>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="profile">
+        <div class="cover-photo">
+            <img src="pics/Back.png" alt="Cover Photo" id="cover-img">
+        </div>
+        <div class="traveler-info">
+            <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Traveler Photo" class="traveler-photo">
+            <div class="traveler-details">
+                <h1 class="traveler-name">Daniel Lawson Travels</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="travel-info">
+        <p>Travel to <span class="country">Spain</span>, in <span class="month-year">July 2023</span></p>
+    </div>
+
+<fieldset class="place-frame">
+        <legend class="place-title">Place 1</legend>
+        <div class="like-btn">
+            <span class="like-count"><i class="fas fa-heart"></i> 55</span>
+        </div>
+     
+        <div class="place">
+            <div class="place-content">
+                <img src="https://cdn.audleytravel.com/5595/3996/79/1342712-patio-de-los-leones-alhambra-granada.jpg" alt="Tokyo Tower" class="place-photo">
+                <div class="place-details">
+                    <h2 class="place-name">Alhambra Palace </h2>
+                    <p class="location">Location: Granada, Spain</p>
+                    <p class="description">It is an exquisite example of Moorish architecture and one of Spain's most iconic landmarks.</p>
+                </div>
+            </div>
+
+            <div class="comments-section">
+                <h3>Comments</h3>
+                <div class="comments">
+                    <p><strong>Leen:</strong> Amazing view!</p>
+                    <p><strong>Ghaida:</strong> A must-visit place in Spain!</p>
+                </div>
+                <form class="add-comment" onsubmit="addComment(event, this)">
+                    <input type="text" placeholder="Add a comment" required>
+                    <button type="submit">Add Comment</button>
+                </form>
+            </div>
+        </div>
+</fieldset>
+
+
+
+<fieldset class="place-frame">
+        <legend class="place-title">Place 2</legend>
+         <div class="like-btn" onclick="addLike(this)">
+            <span class="like-count"><i class="fas fa-heart"></i> 55</span>
+        </div>
+        <div class="place">
+            <div class="place-content">
+                <img src="https://smarthistory.org/wp-content/uploads/2019/07/cordoba.jpg" alt="Tokyo Tower" class="place-photo">
+                <div class="place-details">
+                    <h2 class="place-name">The Great Mosque</h2>
+                    <p class="location">Location: Cordoba, Spain</p>
+                    <p class="description">A beautiful Mosque</p>
+                </div>
+            </div>
+
+            <div class="comments-section">
+                <h3>Comments</h3>
+                <div class="comments">
+                    <p><strong>Aishah:</strong> Amazing view!</p>
+                    <p><strong>Luluah:</strong> A must-visit place in Spain!</p>
+                </div>
+                <form class="add-comment" onsubmit="addComment(event, this)">
+                    <input type="text" placeholder="Add a comment" required>
+                    <button type="submit">Add Comment</button>
+                </form>
+            </div>
+        </div>
+</fieldset>
+    
+    
+    
+    
+    
+    
+    
+
+    <script src="Details.js"></script>
+</body>
+
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-upper">
+        <div class="footer-upper-content">
+            <p class="footer-text">Discover, Share, and Explore</p>
+            <h2>With Voyago!</h2>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <p class="brand-name">Voyago!</p>
+                <div class="footer-links">
+                    <a href="Homepage.php">About Us</a>
+                    <a href="Contact.html">Contact Us</a>
+                    <a href="Privacy-policy.html">Privacy Policy</a>
+                    <a href="Terms-of-service.html">Terms of Service</a>
+                    <a href="Faq.html">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-apps">
+                <p>Get the App</p>
+                <div class="app-buttons">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/0*HsI5uQ_8Ju9suain.png" alt="Google Play">
+                    <img src="https://taproot.com/wp-content/uploads/2024/02/itunes-app-store-logo.png" alt="App Store">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Voyago</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+</html>

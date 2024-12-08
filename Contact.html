@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <a href="Homepage.php"><i class="fas fa-sign-out-alt"></i> Log-Out</a>
+                <a href="UsersHomepage.php"><i class="fas fa-arrow-left"></i> Back to Homepage</a>
+            </div>
+            <!-- Center logo in header -->
+            <div class="nav-center">
+                <img src="pics/voyago.png" alt="Logo" class="logo"> 
+            </div>
+    
+            <div class="nav-right">
+                <img src="pics/profile.jpg" alt="John Doe Small Profile" class="small-profile">
+                <span> John D.</span>
+            </div>
+        </nav>
+    </header>
+
+<section class="contact-us">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, please fill out the form below, and we’ll get back to you as soon as possible.</p>
+
+        <form action="submit_contact.php" method="post">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+</body>
+<footer class="footer">
+    <div class="footer-upper">
+        <div class="footer-upper-content">
+            <p class="footer-text">Discover, Share, and Explore</p>
+            <h2>With Voyago!</h2>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <p class="brand-name">Voyago!</p>
+                <div class="footer-links">
+                    <a href="Homepage.php">About Us</a>
+                    <a href="Contact.html">Contact Us</a>
+                    <a href="Privacy-policy.html">Privacy Policy</a>
+                    <a href="Terms-of-service.html">Terms of Service</a>
+                    <a href="Faq.html">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-apps">
+                <p>Get the App</p>
+                <div class="app-buttons">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/0*HsI5uQ_8Ju9suain.png" alt="Google Play">
+                    <img src="https://taproot.com/wp-content/uploads/2024/02/itunes-app-store-logo.png" alt="App Store">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Voyago</p>
+        </div>
+    </div>
+</footer>
+</html>

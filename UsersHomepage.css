@@ -1,0 +1,540 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Styling for all the elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/**********************Update*******************/
+
+header {
+    
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center; /* Center the entire nav bar */
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between; /* Space out the items evenly */
+    width: 100%;
+    align-items: center;
+}
+
+/* Styling for left side navigation links */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left a {
+    color: #628ECB; /* لون النص */
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left a:hover {
+    color: #8AAEE0; /* لون النص عند التمرير */
+}
+
+.nav-left a i {
+    margin-right: 8px;
+}
+
+/* Center the logo in the header */
+.nav-center {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    height: 50px; /* Adjust the size as needed */
+}
+
+/* Align right side profile picture and name */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a{
+    text-decoration: none;
+}
+
+.nav-right img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #B1C9EF; /* لون الحدود */
+    margin-right: 8px;
+}
+
+.nav-right span {
+    color: #628ECB; /* لون النص */
+    font-size: 14px;
+}
+
+.nav-right span:hover {
+    color: #8AAEE0; /* لون النص عند التمرير */
+}
+/* ##########################*/
+/* Profile card adjustments */
+.background-image {
+    background-image: url('pics/Back.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    z-index: 2;
+}
+
+.text-section {
+    max-width: 600px;
+    color: black;
+    z-index: 2;
+}
+
+.text-section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.text-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #395886;
+}
+
+.background-image{
+height: 300px;
+}
+
+/* Profile card adjustments */
+.profile-card {
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    width: 400px;
+    max-height: 130px;
+    text-align: left; 
+}
+
+.profile-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-info {
+    color: #2b2b2b;
+}
+
+.user-info p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* Optional: Add a background overlay to make text more visible */
+.background-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+
+.text-section {
+    max-width: 600px;
+    color: black;
+    z-index: 2;
+}
+
+.text-section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.text-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #395886;
+}
+
+.background-image{
+height: 300px;
+}
+
+/* Profile card adjustments */
+.profile-card {
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    width: 400px;
+    max-height: 130px;
+    text-align: left; 
+}
+
+.profile-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-info {
+    color: #2b2b2b;
+}
+
+.user-info p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* Optional: Add a background overlay to make text more visible */
+.background-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+/* ##########################*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* لون الخلفية الأساسي */
+}
+
+.traveler-info {
+    position: relative;
+    top: -50px;
+    text-align: center;
+    font-size: 24px;
+    color: #395886; /* لون النص */
+    margin-top: 10px;
+}
+
+.travel-info {
+    color: #888;
+    font-size: 16px;
+}
+
+.traveler-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    background-color: white;
+}
+
+.travel-info p {
+    color: #888;
+    font-size: 16px;
+}
+
+.traveler-details {
+    margin-top: 10px;
+}
+
+.traveler-name {
+    margin: 0;
+    font-size: 24px;
+    color: #395886; /* لون النص */
+}
+
+/*************End update*************/
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-details {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.user-details h2 {
+    margin: 0;
+}
+
+/* Flexbox container for filter and heading */
+.filter {
+    display: flex;
+    justify-content: space-between; /* Space out "All Travels" and filter dropdown */
+    align-items: center; /* Vertically align them */
+    margin-bottom: 10px;
+}
+
+/* Styling for "All Travels" */
+.filter h3 {
+    color: #395886; /* Matches "John Doe's Travels" color */
+    font-size: 24px; /* Adjust the size if needed */
+    font-weight: bold; /* Makes it stand out */
+    margin: 0; /* Removes extra margins */
+}
+
+/* Styling the filter to be oval and matching the table font */
+.filter select {
+    font-family: 'Poppins', sans-serif; /* Matches the table font */
+    font-size: 14px; /* Matches the table font size */
+    color: #395886; /* Matches the table text color */
+    padding: 10px 20px; /* Adds padding to make it look oval */
+    border-radius: 30px; /* Makes it oval */
+    border: 1px solid #B1C9EF; /* Adds a border to match the table */
+    background-color: #D5DEEF; /* Light background similar to the table's look */
+    outline: none; /* Removes the default focus outline */
+    cursor: pointer; /* Changes cursor to pointer for better UX */
+}
+
+/* Optional hover effect for filter */
+.filter select:hover {
+    background-color: #E1EAF8; /* Matches the hover effect of table rows */
+}
+
+
+/* General styling for the table container */
+.flight-table-container {
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.flight-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+/* Ensure some space between table and footer */
+.flight-table-container {
+    margin-bottom: 50px; /* Adds margin at the bottom of the table to create space */
+}
+
+.flight-table th, 
+.flight-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #B1C9EF;
+    font-size: 14px;
+}
+
+.flight-table thead th {
+    background-color: #8AAEE0;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.flight-table tbody tr:nth-child(even) {
+    background-color: #F0F3FA; /* Light background for even rows */
+}
+
+.flight-table tbody tr:hover {
+    background-color: #E1EAF8; /* Hover effect on rows */
+}
+
+.flight-table td {
+    color: #395886;
+    font-weight: 500;
+}
+
+.flight-table td i {
+    margin: 0 5px;
+    cursor: pointer;
+    color: #628ECB; /* Action icons color */
+}
+
+.flight-table td i:hover {
+    color: #8AAEE0;
+}
+
+.flight-table td img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #8AAEE0; /* Button color */
+    color: white;
+}
+
+.pagination a:hover {
+    background-color: #395886;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #8AAEE0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.brand-name{
+    text-align: left;
+}
+
+.footer-upper {
+    background-image: url('background-image.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+}
+
+.footer-upper-content {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-upper h2 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-apps {
+    padding-left: 450px;
+    flex: 1;
+    text-align: center;
+}
+
+.footer-apps p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.app-buttons img {
+    width: 120px;
+    margin: 5px;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+}
+
+/* Remove underline from icons and links */
+.flight-table td a {
+    text-decoration: none;
+}
+
+/* Optional hover effect for icons without underline */
+.flight-table td a:hover {
+    text-decoration: none; /* Ensures no underline appears on hover */
+    color: #8AAEE0; /* Color change on hover */
+}

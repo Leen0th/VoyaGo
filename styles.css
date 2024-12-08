@@ -1,0 +1,270 @@
+/* Importing Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F0F3FA;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    position: relative;
+    background-color: #ffffff;
+    border-bottom: 1px solid #D5DEEF; /* لون الحدود السفلى */
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center; /* Center the entire nav bar */
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between; /* Space out the items evenly */
+    width: 100%;
+    align-items: center;
+}
+
+/* Styling for left side navigation links */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left a {
+    color: #628ECB; /* لون النص */
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left a:hover {
+    color: #8AAEE0; /* لون النص عند التمرير */
+}
+
+.nav-left a i {
+    margin-right: 8px;
+}
+
+/* Center the logo in the header */
+.nav-center {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    height: 50px; /* Adjust the size as needed */
+}
+
+/* Align right side profile picture and name */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #B1C9EF; /* لون الحدود */
+    margin-right: 8px;
+}
+
+.nav-right span {
+    color: #628ECB; /* لون النص */
+    font-size: 14px;
+}
+
+.nav-right span:hover {
+    color: #8AAEE0; /* لون النص عند التمرير */
+}
+
+/* Section Styles */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #395886;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Contact Us Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #395886;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #B1C9EF;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #395886;
+}
+
+.btn {
+    padding: 10px;
+    background-color: #395886;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #628ECB;
+}
+
+/* FAQ Item Styles */
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    color: #395886;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    margin-bottom: 0;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #8AAEE0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.brand-name{
+    text-align: left;
+}
+
+.footer-upper {
+    background-image: url('background-image.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+}
+
+.footer-upper-content {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-upper h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-apps {
+    padding-left: 450px;
+    flex: 1;
+    text-align: center;
+}
+
+.footer-apps p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.app-buttons img {
+    width: 120px;
+    margin: 5px;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+}
